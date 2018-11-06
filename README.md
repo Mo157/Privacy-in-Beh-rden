@@ -8,6 +8,6 @@ Die Forschungsfrage, die wir uns überlegt haben lautet wie folgt:
 
 Welche Nutzerfaktoren beeinflussen die Nutzungsbereitschaft einer electronic Identity Card (eID)? 
 
-Dazu haben wir bereits einen Faktorenraum erstellt ![tooltip](Images/FaktorenraumV2.png) 
+Dazu haben wir bereits einen Faktorenraum erstellt ![tooltip](Images/Faktorenraum_V2.png) 
 
 In Folge werden wir einen Fragebogen erstellen.
