@@ -12,3 +12,4 @@ Dazu haben wir bereits einen Faktorenraum erstellt ![tooltip](Images/Faktorenrau
 
 Das hier ist ein Test, um zu gucken, ob ich etwas stagen/commiten kann. (Julia)
 Nachricht an Bianca udn Julia, sehr ihr diese?
+Ich sehe es, wie steht es bei euch?
