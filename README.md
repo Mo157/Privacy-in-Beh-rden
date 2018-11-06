@@ -10,3 +10,4 @@ Welche Nutzerfaktoren beeinflussen die Nutzungsbereitschaft einer electronic Ide
 
 Dazu haben wir bereits einen Faktorenraum erstellt ![tooltip](Images/FaktorenraumV2.png) 
 
+In Folge werden wir einen Fragebogen erstellen.
