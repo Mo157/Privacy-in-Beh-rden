@@ -11,3 +11,4 @@ Welche Nutzerfaktoren beeinflussen die Nutzungsbereitschaft einer electronic Ide
 Dazu haben wir bereits einen Faktorenraum erstellt ![tooltip](Images/Faktorenraum.png) 
 
 Das hier ist ein Test, um zu gucken, ob ich etwas stagen/commiten kann. (Julia)
+Nachricht an Bianca udn Julia, sehr ihr diese?
