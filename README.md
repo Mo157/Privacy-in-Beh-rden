@@ -38,3 +38,5 @@ Die aktualisierte Version des Faktorenraums berücksichtigt, dass nur Faktoren a
 Fragebogen
 
 Nun haben wir unseren Fragebogen auf Survey Monkey gegliedert und bei dem Demografischen Daten schon Fragen formuliert. Im nächsten Schritt wird jeder aus der Gruppe sich zu einem Gliederungsfaktor Fragen und die Art der Antwortmöglichkeit überlegen. Die Aufteilung folgt. 
+
+Ich (Anna) habe nun Fragen und Antwortmöglichkeiten zu den Demografischen Daten und zur Nutzung anderer Technologien erstellt. Sie sind mit Sicherheit noch nicht perfekt, aber eine Grundlage auf die wir aufbauen können. Kritik, Verbesserungevorschläge und Ergänzungen werden gerne gehört ;-)
