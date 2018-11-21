@@ -45,3 +45,4 @@ Ich (Arlinda) habe ein Google Dokument erstellt, damit wir erst einmal alle unse
 
 Test Test Test
 
+Frage 17 bis 22 wurden auf Surveymonkey zu einer Frage mit drei Items zusammengefasst (Arlinda)
