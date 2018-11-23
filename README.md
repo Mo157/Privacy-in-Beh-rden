@@ -43,3 +43,22 @@ Ich (Anna) habe nun Fragen und Antwortmöglichkeiten zu den Demografischen Daten
 
 Ich (Arlinda) habe ein Google Dokument erstellt, damit wir erst einmal alle unsere Fragen sammeln können, und auch schon einige Fragen sowie ein Bespielszeanriotext erstellt.
 
+
+Test Test Test
+
+Frage 17 bis 22 wurden auf Surveymonkey zu einer Frage mit drei Items zusammengefasst (Arlinda)
+
+Frage 9 wurde bearbeitet: Vorschlagformulierung von Herrn Hildebrandt wurde übernommen (Arlinda) 
+
+Es wurde der Szenarientext angepasst (Julia).
+
+Es wurde das Wissen über den e-Ausweis operationaliert: Frage 12 (Julia).
+
+Es wurde die Reihenfolge der Fragen angepasst und Fragen zu UV auf die Fragebogenseite "Nutzerfaktoren" verschoben (Julia).
+
+Frage 14 und 15 wurde die Skala angepasst von einer Zustimmungsmatrix zu einer Multiple-Choice Frage. (Julia)
+
+Es wurde bei Frage 16 und 18 Vorschläge zur Löschung von Items eingefügt (Julia).
+
+Es wurde Vorgeschlagen Frage 11 zu löschen (Julia).
+
