@@ -43,5 +43,3 @@ Ich (Anna) habe nun Fragen und Antwortmöglichkeiten zu den Demografischen Daten
 
 Ich (Arlinda) habe ein Google Dokument erstellt, damit wir erst einmal alle unsere Fragen sammeln können, und auch schon einige Fragen sowie ein Bespielszeanriotext erstellt.
 
-# Anna
-Ich habe im großen Fragebogen den Einführungstext verändert und die Verantwortlichen ergänzt
