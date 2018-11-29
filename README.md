@@ -62,3 +62,11 @@ Es wurde bei Frage 16 und 18 Vorschläge zur Löschung von Items eingefügt (Jul
 
 Es wurde Vorgeschlagen Frage 11 zu löschen (Julia).
 
+Hausaufgabe fuer den 30.11.2018 - drei Hypothesen:
+1. Personen mit höherer Technikakzeptanz nutzen haeufiger bereits die eID/beabsichtigen häufiger, sie in nächster Zeit zu nutzen.
+
+2.Personen mit hoehererm Wissensstand über die eID haben eine positivere Haltung gegenueber der eID.
+
+3. Personen, die nicht zentral in einer Stadt leben, sind eher dazu bereit, die eID zu nutzen.
+
+
