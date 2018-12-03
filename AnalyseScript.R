@@ -134,3 +134,7 @@ data <- data %>%
 saveRDS(data, "data/Smart Identification2.rds")
 
 ###sollte jetzt eigentlich fertig sein
+
+##### FEEDBACK: Sieht sehr gut aus, PRIVACY und DATA_PROTEC sind aber leer. Kleiner Tipp: Die Items dazu haben eine andere Skalenbeschriftung.----
+
+
