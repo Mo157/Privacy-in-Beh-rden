@@ -70,4 +70,5 @@ Hausaufgabe fuer den 30.11.2018 - drei Hypothesen:
 
 3. Personen, die nicht zentral in einer Stadt leben, sind eher dazu bereit, die eID zu nutzen.
 
+Bianca-Test
 
