@@ -72,3 +72,10 @@ Hausaufgabe fuer den 30.11.2018 - drei Hypothesen:
 
 Bianca-Test
 
+# Notiz für Aufgabe 3 der Hausaufgabe (07.12.18)
+
+Einfach: t.test(data$TROST_HUMAN, mu=2.5) 
+
+Unverbunden t.test(filter(data, gender== "männlich")$KUT, filter(data, gender== "weiblich")$KUT) oder t.test(data$kut~ data$gender)
+
+Verbunden t.test(data$TROST_HUMAN, data$TROST_ROBOT, paired= TRUE)
