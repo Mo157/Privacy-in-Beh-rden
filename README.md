@@ -66,11 +66,21 @@ Hausaufgabe fuer den 30.11.2018 - drei Hypothesen:
 
 1. Personen mit höherer Technikakzeptanz nutzen haeufiger bereits die eID/beabsichtigen häufiger, sie in nächster Zeit zu nutzen.
 
+
+Kommentar (Julia): Da wir verschiedene Personalausweistypen abfragen, wäre dies eigentlich eine Unterschiedshypothese für eine ANOVA. Für die Hausaufgabe mit dem T-Test können wir jedoch zwei ausweistypen vergleichen.
+
+--> H1:Personen, die eine aktivierte eID haben, weisen eine höhere Technikakzeptanz auf als Personen mit nicht aktivierter eID.
+
 2. Personen mit hoehererm Wissensstand über die eID haben eine positivere Haltung gegenueber der eID.
+
+Kommentar (Julia): Da wir beides in Skalen erfassen, handelt es sich hierbei um eine Zusammenhangy-Hypothese. Für den T-Test ist sie nicht geeignet.
+
+--> H2: Besitzer einer aktivierten e-ID haben ein höheres Wissen über die eID, als Besitzer einer deaktivierten eID.
 
 3. Personen, die nicht zentral in einer Stadt leben, sind eher dazu bereit, die eID zu nutzen.
 
-Bianca-Test
+--> H3: Personen, die auf dem Land leben, beabsichtigen stärker die eID in nächster Zeit zu nutzen, als Personen, die zentral in einer Stadt wohnen.
+
 
 # Notiz für Aufgabe 3 der Hausaufgabe (07.12.18)
 

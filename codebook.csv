@@ -40,43 +40,38 @@ VAR38;X47 Ich hatte noch nie Angst um meine persönlichen Daten.
 VAR39;X48 Ich habe bis jetzt nur gute Erfahrungen mit Technologien gemacht.
 VAR40;X49 Ich weiß immer wer meine Daten einsehen kann.
 VAR41;X50 Ich habe Angst Technologie zu verwenden, weil ich nicht weiß, was mit meinen Daten passiert.
-VAR42;X51 Änderung
-VAR43;Welcher Aussage im Bezug auf digitale Technologien stimmen Sie zu? Ich informiere mich über neue digitale Technologien.
-VAR44;X53 Digitale Technologien machen vieles umständlicher.
-VAR45;X54 Es macht mir Spaß digitale Neuerungen auszuprobieren.
-VAR46;X55 Digitale Technologien machen unabhängig.
-VAR47;X56 Ich liebe es, Dinge auf digitalem Weg erledigen zu können.
-VAR48;X57 Digitale Technologien verursachen Stress.
-VAR49;X58 Digitale Technologien erleichtern mir den Alltag.
-VAR50;X59 Digitale Technologien erhöhen die Sicherheit.
-VAR51;Welchen Aussagen über den elektronischen Ausweis halten Sie für korrekt? Die eID kann eine rechtsverbindliche Unterschrift ersetzen.
-VAR52;X61 Mit der eID kann man beispielsweise Bafög-Nachweise online einreichen.
-VAR53;X62 Die eID ermöglicht es Behörden mich zu orten.
-VAR54;X63 Mit einem Lesegerät kann jeder, der im Besitz meiner eID ist, ihn online verwenden.
-VAR55;X64 Alle Daten werden ausschließlich verschlüsselt übertragen.
-VAR56;X65 Die eID kann unbemerkt auf der Straße ausgelesen werden.
-VAR57;Welchen Personalausweis besitzen Sie? Response_5
-VAR58;Haben Sie schon einmal schlechte Erfahrungen bei Behörden gesammelt? Response_6
-VAR59;Wurden Sie über die eID informiert, als Sie einen neuen Personalausweis beantragt haben? Response_7
-VAR60;Bitte geben Sie an, inwiefern Sie den folgenden Aussagen zustimmen. Ich vertraue den Mitarbeiter*Innen einer Behörde, dass meine Daten vertraulich behandelt werden.
-VAR61;X70 Ich vertraue darauf, dass die von Behörden verwendeten Technik (z.B. Verschlüsselungssysteme, Firewalls, Programme usw.) meine Daten auch vor externen Angriffen schützt.
-VAR62;X71 Ich habe Angst, durch die eID mehr überwacht zu werden.
-VAR63;X72 Ich habe Angst davor, dass meine Daten bei der eID nicht ordnungsgemäß verwaltet werden, weil ich es nicht selbst überprüfen kann.
-VAR64;X73 Die Einführung der eID halte ich für sinnvoll, das macht vieles leichter.
-VAR65;X74 Ich empfinde die Einführung der eID als unnötig, da ich eh lieber persönlich zu der entsprechenden Behörde gehe.
-VAR66;X75 Die Einführung der eID finde ich gut, bin aber skeptisch über die Umsetzung, da es nicht transparent ist, wo meine Daten überall gespeichert werden.
-VAR67;X76 Ich empfinde die Einführung der eID als unnötig, da ich eh lieber persönlich zu der entsprechenden Behörde gehe._1
-VAR68;X77 Die Einführung der eID finde ich gut, bin aber skeptisch über die Umsetzung, da es nicht transparent ist, wo meine Daten überall gespeichert werden._1
-VAR69;Welche Vorteile sehen Sie in der flächendeckenden Nutzung der eID? Open-Ended Response_1
-VAR70;Welche Aussagen in Bezug auf die eID treffen auf Sie zu? Ich beabsichtige, in nächster Zeit die eID zu nutzen.
-VAR71;X80 Die eID bietet für mich als Bürger*In Vorteile.
-VAR72;X81 Ich kenne die Funktionen der eID.
-VAR73;X82 Ich weiß nicht, welche Daten auf der eID gespeichert sind.
-VAR74;X83 Ich weiß, wer Zugriff auf die Daten auf die eID hat.
-VAR75;X84 Ich fühle mich nicht ausreichend über die möglichen Services der eID informiert.
-VAR76;X85 LÖSCHEN: Ich vertraue darauf, dass meine Daten nicht weitergegeben werden.
-VAR77;X86 Ich fühle mich nicht ausreichend über die möglichen Services des e-Ausweises informiert.
-VAR78;Weshalb nutzen Sie (k)eine eID? Open-Ended Response_2
-VAR79;Folgende Bedenken habe ich in Bezug auf die eID. Open-Ended Response_3
-VAR80;Ich wünsche mir folgende weitere Funktionen der eID. Open-Ended Response_4
-VAR81;Für Ihre Fragen, Anmerkungen oder Feedback: Open-Ended Response_5
+VAR42;Welcher Aussage im Bezug auf digitale Technologien stimmen Sie zu? Ich informiere mich über neue digitale Technologien.
+VAR43;X53 Digitale Technologien machen vieles umständlicher.
+VAR44;X54 Es macht mir Spaß digitale Neuerungen auszuprobieren.
+VAR45;X55 Digitale Technologien machen unabhängig.
+VAR46;X56 Ich liebe es, Dinge auf digitalem Weg erledigen zu können.
+VAR47;X57 Digitale Technologien verursachen Stress.
+VAR48;X58 Digitale Technologien erleichtern mir den Alltag.
+VAR49;X59 Digitale Technologien erhöhen die Sicherheit.
+VAR50;Welchen Aussagen über den elektronischen Ausweis halten Sie für korrekt? Die eID kann eine rechtsverbindliche Unterschrift ersetzen.
+VAR51;X61 Mit der eID kann man beispielsweise Bafög-Nachweise online einreichen.
+VAR52;X62 Die eID ermöglicht es Behörden mich zu orten.
+VAR53;X63 Mit einem Lesegerät kann jeder, der im Besitz meiner eID ist, ihn online verwenden.
+VAR54;X64 Alle Daten werden ausschließlich verschlüsselt übertragen.
+VAR55;X65 Die eID kann unbemerkt auf der Straße ausgelesen werden.
+VAR56;Welchen Personalausweis besitzen Sie? Response_5
+VAR57;Haben Sie schon einmal schlechte Erfahrungen bei Behörden gesammelt? Response_6
+VAR58;Wurden Sie über die eID informiert, als Sie einen neuen Personalausweis beantragt haben? Response_7
+VAR59;Bitte geben Sie an, inwiefern Sie den folgenden Aussagen zustimmen. Ich vertraue den Mitarbeiter*Innen einer Behörde, dass meine Daten vertraulich behandelt werden.
+VAR60;X70 Ich vertraue darauf, dass die von Behörden verwendeten Technik (z.B. Verschlüsselungssysteme, Firewalls, Programme usw.) meine Daten auch vor externen Angriffen schützt.
+VAR61;X71 Ich habe Angst, durch die eID mehr überwacht zu werden.
+VAR62;X72 Ich habe Angst davor, dass meine Daten bei der eID nicht ordnungsgemäß verwaltet werden, weil ich es nicht selbst überprüfen kann.
+VAR63;X73 Die Einführung der eID halte ich für sinnvoll, das macht vieles leichter.
+VAR64;X74 Ich empfinde die Einführung der eID als unnötig, da ich eh lieber persönlich zu der entsprechenden Behörde gehe.
+VAR65;X75 Die Einführung der eID finde ich gut, bin aber skeptisch über die Umsetzung, da es nicht transparent ist, wo meine Daten überall gespeichert werden.
+VAR66;Welche Vorteile sehen Sie in der flächendeckenden Nutzung der eID? Open-Ended Response_1
+VAR67;Welche Aussagen in Bezug auf die eID treffen auf Sie zu? Ich beabsichtige, in nächster Zeit die eID zu nutzen.
+VAR68;X80 Die eID bietet für mich als Bürger*In Vorteile.
+VAR69;X81 Ich kenne die Funktionen der eID.
+VAR70;X82 Ich weiß nicht, welche Daten auf der eID gespeichert sind.
+VAR71;X83 Ich weiß, wer Zugriff auf die Daten auf die eID hat.
+VAR72;X84 Ich fühle mich nicht ausreichend über die möglichen Services der eID informiert.
+VAR73;Weshalb nutzen Sie (k)eine eID? Open-Ended Response_2
+VAR74;Folgende Bedenken habe ich in Bezug auf die eID. Open-Ended Response_3
+VAR75;Ich wünsche mir folgende weitere Funktionen der eID. Open-Ended Response_4
+VAR76;Für Ihre Fragen, Anmerkungen oder Feedback: Open-Ended Response_5

@@ -40,7 +40,6 @@ trust_tech3;X47 Ich hatte noch nie Angst um meine persönlichen Daten.
 trust_tech4;X48 Ich habe bis jetzt nur gute Erfahrungen mit Technologien gemacht.
 trust_tech5;X49 Ich weiß immer wer meine Daten einsehen kann.
 trust_tech6;X50 Ich habe Angst Technologie zu verwenden, weil ich nicht weiß, was mit meinen Daten passiert.
-trust_tech7;X51 Änderung
 dig_tech1;Welcher Aussage im Bezug auf digitale Technologien stimmen Sie zu? Ich informiere mich über neue digitale Technologien.
 dig_tech2;X53 Digitale Technologien machen vieles umständlicher.
 dig_tech3;X54 Es macht mir Spaß digitale Neuerungen auszuprobieren.
@@ -54,7 +53,7 @@ true_false2;X61 Mit der eID kann man beispielsweise Bafög-Nachweise online einr
 true_false3;X62 Die eID ermöglicht es Behörden mich zu orten.
 true_false4;X63 Mit einem Lesegerät kann jeder, der im Besitz meiner eID ist, ihn online verwenden.
 true_false5;X64 Alle Daten werden ausschließlich verschlüsselt übertragen.
-true_false5;X65 Die eID kann unbemerkt auf der Straße ausgelesen werden.
+true_false6;X65 Die eID kann unbemerkt auf der Straße ausgelesen werden.
 which_eID;Welchen Personalausweis besitzen Sie? Response_5
 bad_exp;Haben Sie schon einmal schlechte Erfahrungen bei Behörden gesammelt? Response_6
 info_eID;Wurden Sie über die eID informiert, als Sie einen neuen Personalausweis beantragt haben? Response_7
@@ -65,17 +64,13 @@ trust_authority4;X72 Ich habe Angst davor, dass meine Daten bei der eID nicht or
 trust_authority5;X73 Die Einführung der eID halte ich für sinnvoll, das macht vieles leichter.
 trust_authority6;X74 Ich empfinde die Einführung der eID als unnötig, da ich eh lieber persönlich zu der entsprechenden Behörde gehe.
 trust_authority7;X75 Die Einführung der eID finde ich gut, bin aber skeptisch über die Umsetzung, da es nicht transparent ist, wo meine Daten überall gespeichert werden.
-trust_authority8;X76 Ich empfinde die Einführung der eID als unnötig, da ich eh lieber persönlich zu der entsprechenden Behörde gehe._1
-trust_authority9;X77 Die Einführung der eID finde ich gut, bin aber skeptisch über die Umsetzung, da es nicht transparent ist, wo meine Daten überall gespeichert werden._1
 advantages;Welche Vorteile sehen Sie in der flächendeckenden Nutzung der eID? Open-Ended Response_1
-knowledge1;Welche Aussagen in Bezug auf die eID treffen auf Sie zu? Ich beabsichtige, in nächster Zeit die eID zu nutzen.
-knowledge2;X80 Die eID bietet für mich als Bürger*In Vorteile.
-knowledge3;X81 Ich kenne die Funktionen der eID.
-knowledge4;X82 Ich weiß nicht, welche Daten auf der eID gespeichert sind.
-knowledge5;X83 Ich weiß, wer Zugriff auf die Daten auf die eID hat.
-knowledge6;X84 Ich fühle mich nicht ausreichend über die möglichen Services der eID informiert.
-knowledge7;X85 LÖSCHEN: Ich vertraue darauf, dass meine Daten nicht weitergegeben werden.
-knowledge8;X86 Ich fühle mich nicht ausreichend über die möglichen Services des e-Ausweises informiert.
+statement1;Welche Aussagen in Bezug auf die eID treffen auf Sie zu? Ich beabsichtige, in nächster Zeit die eID zu nutzen.
+statement2;X80 Die eID bietet für mich als Bürger*In Vorteile.
+statement3;X81 Ich kenne die Funktionen der eID.
+statement4;X82 Ich weiß nicht, welche Daten auf der eID gespeichert sind.
+statement5;X83 Ich weiß, wer Zugriff auf die Daten auf die eID hat.
+statement6;X84 Ich fühle mich nicht ausreichend über die möglichen Services der eID informiert.
 why_eID;Weshalb nutzen Sie (k)eine eID? Open-Ended Response_2
 concerns;Folgende Bedenken habe ich in Bezug auf die eID. Open-Ended Response_3
 wishes;Ich wünsche mir folgende weitere Funktionen der eID. Open-Ended Response_4
