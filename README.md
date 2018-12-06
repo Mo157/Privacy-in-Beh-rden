@@ -95,3 +95,10 @@ Einfach: t.test(data$TROST_HUMAN, mu=2.5)
 Unverbunden t.test(filter(data, gender== "männlich")$KUT, filter(data, gender== "weiblich")$KUT) oder t.test(data$kut~ data$gender)
 
 Verbunden t.test(data$TROST_HUMAN, data$TROST_ROBOT, paired= TRUE)
+
+
+
+Kommentar Julia für Anna: 
+Bei H1: statt gender --> which-eID und statt KUT --> digi_tech
+Bei H2: statt gender --> which-eID und statt KUT --> true_false
+Bei H3: statt gender --> residence und statt KUT --> .... geht noch nicht - eigentlich statemement 1, aber das haben wir aus data gelöscht. ich frage nochmal Herrn Hildebrand
