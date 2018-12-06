@@ -44,7 +44,6 @@ Ich (Anna) habe nun Fragen und Antwortmöglichkeiten zu den Demografischen Daten
 Ich (Arlinda) habe ein Google Dokument erstellt, damit wir erst einmal alle unsere Fragen sammeln können, und auch schon einige Fragen sowie ein Bespielszeanriotext erstellt.
 
 
-Test Test Test
 
 Frage 17 bis 22 wurden auf Surveymonkey zu einer Frage mit drei Items zusammengefasst (Arlinda)
 
@@ -62,6 +61,8 @@ Es wurde bei Frage 16 und 18 Vorschläge zur Löschung von Items eingefügt (Jul
 
 Es wurde Vorgeschlagen Frage 11 zu löschen (Julia).
 
+Kommentar: Es konnte nicht gelöscht, sondern nur ausgeblendet werden. Das muss beim Datecleaning beachtet werden (Julia).
+
 Hausaufgabe fuer den 30.11.2018 - drei Hypothesen:
 
 1. Personen mit höherer Technikakzeptanz nutzen haeufiger bereits die eID/beabsichtigen häufiger, sie in nächster Zeit zu nutzen.
@@ -71,16 +72,21 @@ Kommentar (Julia): Da wir verschiedene Personalausweistypen abfragen, wäre dies
 
 --> H1:Personen, die eine aktivierte eID haben, weisen eine höhere Technikakzeptanz auf als Personen mit nicht aktivierter eID.
 
+H0: Es gibt keinen Unterschied in der Technikakzeptanz zwischen Personen mit aktivierter eID und Personen mit nicht aktivierter eID.
+
 2. Personen mit hoehererm Wissensstand über die eID haben eine positivere Haltung gegenueber der eID.
 
 Kommentar (Julia): Da wir beides in Skalen erfassen, handelt es sich hierbei um eine Zusammenhangy-Hypothese. Für den T-Test ist sie nicht geeignet.
 
---> H2: Besitzer einer aktivierten e-ID haben ein höheres Wissen über die eID, als Besitzer einer deaktivierten eID.
+--> H2: Besitzer einer aktivierten eID haben ein höheres Wissen über die eID, als Besitzer einer nicht aktivierten eID.
+
+H0: Es gibt keinen Unterschied im Wissensstand über die eID zwischen Personen mit aktivierter und Personen mit nicht aktivierter eID.
 
 3. Personen, die nicht zentral in einer Stadt leben, sind eher dazu bereit, die eID zu nutzen.
 
 --> H3: Personen, die auf dem Land leben, beabsichtigen stärker die eID in nächster Zeit zu nutzen, als Personen, die zentral in einer Stadt wohnen.
 
+H0: Es gibt keinen Unterschied in der Absicht in nächster Zeit eine eID zu nutzen zwischen Personen mit aktivierter und Personen mit nicht aktivierter eID.
 
 # Notiz für Aufgabe 3 der Hausaufgabe (07.12.18)
 
