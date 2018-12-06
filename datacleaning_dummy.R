@@ -84,6 +84,13 @@ scale.zustimmung <-c("Stimme gar nicht zu",
                      "Stimme zu", 
                      "Stimme völlig zu")
 
+scale.zustimmungklein <-c("stimme gar nicht zu", 
+                     "stimme nicht zu", 
+                     "stimme eher nicht zu", 
+                     "stimme eher zu", 
+                     "stimme zu", 
+                     "stimme völlig zu")
+
 
 # Likert-Items zu ordinalen levels machen:
 
@@ -96,13 +103,13 @@ raw.short$kut6 <- ordered(raw.short$kut6, levels = scale.zustimmung)
 raw.short$kut7 <- ordered(raw.short$kut7, levels = scale.zustimmung)
 raw.short$kut8 <- ordered(raw.short$kut8, levels = scale.zustimmung)
 
-raw.short$privacy1 <- ordered(raw.short$privacy1, levels = scale.zustimmung)
-raw.short$privacy2 <- ordered(raw.short$privacy2, levels = scale.zustimmung)
-raw.short$privacy3 <- ordered(raw.short$privacy3, levels = scale.zustimmung)
+raw.short$privacy1 <- ordered(raw.short$privacy1, levels = scale.zustimmungklein)
+raw.short$privacy2 <- ordered(raw.short$privacy2, levels = scale.zustimmungklein)
+raw.short$privacy3 <- ordered(raw.short$privacy3, levels = scale.zustimmungklein)
 
-raw.short$data_protec1 <- ordered(raw.short$data_protec1, levels = scale.zustimmung)
-raw.short$data_protec2 <- ordered(raw.short$data_protec2, levels = scale.zustimmung)
-raw.short$data_protec3 <- ordered(raw.short$data_protec3, levels = scale.zustimmung)
+raw.short$data_protec1 <- ordered(raw.short$data_protec1, levels = scale.zustimmungklein)
+raw.short$data_protec2 <- ordered(raw.short$data_protec2, levels = scale.zustimmungklein)
+raw.short$data_protec3 <- ordered(raw.short$data_protec3, levels = scale.zustimmungklein)
 
 raw.short$buy_tech1 <- ordered(raw.short$buy_tech1, levels = scale.zustimmung)
 raw.short$buy_tech2 <- ordered(raw.short$buy_tech2, levels = scale.zustimmung)
