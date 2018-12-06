@@ -194,3 +194,15 @@ data <- data %>%
 View(data)
 
 saveRDS(data, "data/Smart Identification2.rds")
+
+
+###### t-Test der 3 Hypothesen
+
+# H1: 
+t.test(filter(data, which_eID)$DIG_TECH)
+
+# H2:
+t.test(filter(data, which_eID)$TRUE-FALSE)
+
+# H3:
+t.test(filter(data, residence)$Statement1)
