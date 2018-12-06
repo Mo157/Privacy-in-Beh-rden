@@ -102,3 +102,10 @@ Kommentar Julia für Anna:
 Bei H1: statt gender --> which_eID und statt KUT --> DIG_TECH
 Bei H2: statt gender --> which_eID und statt KUT --> TRUE_FALSE
 Bei H3: statt gender --> residence und statt KUT --> Statement1
+
+
+# R Code zur Überprüfung der 3 Hypothesen mit T-Test (Schreibe es auch in das Analyse Skript)
+
+H1: t.test(filter(data, which_eID)$DIG_TECH)
+H2: t.test(filter(data, which_eID)$TRUE-FALSE)
+H3: t.test(filter(data, residence)$Statement1)
