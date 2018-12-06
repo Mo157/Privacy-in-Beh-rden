@@ -158,13 +158,13 @@ library(psych)
 
 schluesselliste <- list(KUT= c("kut1", "-kut2", "kut3", "kut4", "kut5", "kut6", "kut7", "kut8"),
                         PRIVACY= c("privacy1", "privacy2", "-privacy3"),
-                        DATA_PROTEC= c("data_protec1", "data_protec2", "data_protec3"),
+                        DATA_PROTEC= c("data_protec1", "data_protec2", "-data_protec3"),
                         BUY_TECH= c("buy_tech1", "buy_tech2", "buy_tech3", "buy_tech4", "buy_tech5", "buy_tech6"),
-                        TRUST_TECH= c("trust_tech1", "trust_tech2", "trust_tech3", "trust_tech4", "trust_tech5", "trust_tech6"),
-                        DIG_TECH= c("dig_tech1", "dig_tech2", "dig_tech3", "dig_tech4", "dig_tech5", "dig_tech6", "dig_tech7", "dig_tech8"),
-                        TRUE_FALSE= c("true_false1", "true_false2", "true_false3", "true_false4", "true_false5", "true_false6"),
-                        TRUST_AUTHORITY= c("trust_authority1", "trust_authority2", "trust_authority3", "trust_authority4", "trust_authority5", "trust_authority6", "trust_authority7"),
-                        STATEMENT_EID = c("statement1","statement2", "statement3", "statement4", "statement5", "statement6")
+                        TRUST_TECH= c("trust_tech1", "trust_tech2", "trust_tech3", "trust_tech4", "trust_tech5", "-trust_tech6"),
+                        DIG_TECH= c("dig_tech1", "-dig_tech2", "dig_tech3", "dig_tech4", "dig_tech5", "-dig_tech6", "dig_tech7", "dig_tech8"),
+                        TRUE_FALSE= c("true_false1", "true_false2", "-true_false3", "-true_false4", "true_false5", "-true_false6"),
+                        TRUST_AUTHORITY= c("trust_authority1", "trust_authority2", "-trust_authority3", "trust_authority4", "trust_authority5", "-trust_authority6", "-trust_authority7"),
+                        STATEMENT_EID = c("statement1","statement2", "statement3", "-statement4", "statement5", "-statement6")
 )
 
 
