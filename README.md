@@ -99,6 +99,6 @@ Verbunden t.test(data$TROST_HUMAN, data$TROST_ROBOT, paired= TRUE)
 
 
 Kommentar Julia für Anna: 
-Bei H1: statt gender --> which-eID und statt KUT --> digi_tech
-Bei H2: statt gender --> which-eID und statt KUT --> true_false
-Bei H3: statt gender --> residence und statt KUT --> .... geht noch nicht - eigentlich statemement 1, aber das haben wir aus data gelöscht. ich frage nochmal Herrn Hildebrand
+Bei H1: statt gender --> which_eID und statt KUT --> DIG_TECH
+Bei H2: statt gender --> which_eID und statt KUT --> TRUE_FALSE
+Bei H3: statt gender --> residence und statt KUT --> Statement1
