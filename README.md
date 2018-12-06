@@ -107,7 +107,7 @@ Bei H3: statt gender --> residence und statt KUT --> Statement1
 # R Code zur Überprüfung der 3 Hypothesen mit T-Test (Schreibe es auch in das Analyse Skript)
 
 H1: t.test(filter(data, which_eID)$DIG_TECH)
-H2: t.test(filter(data, which_eID)$TRUE-FALSE)
+H2: t.test(filter(data, which_eID)$TRUE_FALSE)
 H3: t.test(filter(data, residence)$Statement1)
 
 Hinweise zum Umgang mit P-Values.
