@@ -103,12 +103,22 @@ Bei H1: statt gender --> which_eID und statt KUT --> DIG_TECH
 Bei H2: statt gender --> which_eID und statt KUT --> TRUE_FALSE
 Bei H3: statt gender --> residence und statt KUT --> Statement1
 
+Einen eID-fähigen, dessen Funktion ich auch nutze.
 
 # R Code zur Überprüfung der 3 Hypothesen mit T-Test (Schreibe es auch in das Analyse Skript)
 
-H1: t.test(filter(data, which_eID)$DIG_TECH)
-H2: t.test(filter(data, which_eID)$TRUE_FALSE)
-H3: t.test(filter(data, residence)$Statement1)
+H1:
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH,filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH)
+
+
+H2: 
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$$TRUE_FALSE,filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE)
+
+
+H3: 
+t.test(filter(data, residence== "Ich wohne auf dem Land.")$$Statement1,filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
+
+t.test(filter(data, residence)$Statement1)
 
 Hinweise zum Umgang mit P-Values.
 
