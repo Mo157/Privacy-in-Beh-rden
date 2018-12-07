@@ -112,11 +112,11 @@ t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deakt
 
 
 H2: 
-t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$$TRUE_FALSE,filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE)
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE)
 
 
 H3: 
-t.test(filter(data, residence== "Ich wohne auf dem Land.")$$Statement1,filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
+t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
 
 t.test(filter(data, residence)$Statement1)
 
