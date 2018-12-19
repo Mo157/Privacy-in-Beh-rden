@@ -126,3 +126,20 @@ Der P-Wert (in R p-value) wird auch Signifikanzniveau genannt. Das gängige Sign
 Für weitere Infos eignen sich die folgenden Quellen:
 http://www.perfendo.org/docs/BayesProbability/twelvePvaluemisconceptions.pdf
 http://blog.minitab.com/blog/adventures-in-statistics-2/not-all-p-values-are-created-equal
+
+
+### Hausaufgabe für den 21.12.2018
+
+Drei Zusammenhangshypothesen + dazugehörige Nullhypothese
+
+1: KUT und DIG_TECH
+Hypothese: Je höherer der KUT, desto höher der DIG_TECH
+H0: Es gibt keinen Zusammenhang zwischen KUT und DIG_TECH
+
+2: AGE und USE_TECH
+Hypothese: Je älter der Mensch, desto niedriger der USE_TECH
+H0: Es gibt keinen Zusammenhang zwischen AGE und USE_TECH
+
+3: TRUST_TECH und TRUST_AUTHORITY
+Hypothese: Je mehr man Technologien vertraut, desto eher vertraut man Behörden
+H0: Es gibt keinen Zusammenhang zwischen TRUST_TECH und TRUST_AUTHORITY
