@@ -109,12 +109,22 @@ Bei H1: statt gender --> which_eID und statt KUT --> DIG_TECH
 Bei H2: statt gender --> which_eID und statt KUT --> TRUE_FALSE
 Bei H3: statt gender --> residence und statt KUT --> Statement1
 
+Einen eID-fähigen, dessen Funktion ich auch nutze.
 
 # R Code zur Überprüfung der 3 Hypothesen mit T-Test (Schreibe es auch in das Analyse Skript)
 
-H1: t.test(filter(data, which_eID)$DIG_TECH)
-H2: t.test(filter(data, which_eID)$TRUE_FALSE)
-H3: t.test(filter(data, residence)$Statement1)
+H1:
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH,filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH)
+
+
+H2: 
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE)
+
+
+H3: 
+t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
+
+t.test(filter(data, residence)$Statement1)
 
 Hinweise zum Umgang mit P-Values.
 
@@ -122,4 +132,24 @@ Der P-Wert (in R p-value) wird auch Signifikanzniveau genannt. Das gängige Sign
 Für weitere Infos eignen sich die folgenden Quellen:
 http://www.perfendo.org/docs/BayesProbability/twelvePvaluemisconceptions.pdf
 http://blog.minitab.com/blog/adventures-in-statistics-2/not-all-p-values-are-created-equal
+<<<<<<< HEAD
 >>>>>>> 0a88476d356c5a7526fc63c530a5631eb05de6c4
+=======
+
+
+### Hausaufgabe für den 21.12.2018
+
+Drei Zusammenhangshypothesen + dazugehörige Nullhypothese
+
+1: KUT und DIG_TECH
+Hypothese: Je höherer der KUT, desto höher der DIG_TECH
+H0: Es gibt keinen Zusammenhang zwischen KUT und DIG_TECH
+
+2: AGE und USE_TECH
+Hypothese: Je älter der Mensch, desto niedriger der USE_TECH
+H0: Es gibt keinen Zusammenhang zwischen AGE und USE_TECH
+
+3: TRUST_TECH und TRUST_AUTHORITY
+Hypothese: Je mehr man Technologien vertraut, desto eher vertraut man Behörden
+H0: Es gibt keinen Zusammenhang zwischen TRUST_TECH und TRUST_AUTHORITY
+>>>>>>> 684925067597a5a3eb924b1e80481bfc611c3985

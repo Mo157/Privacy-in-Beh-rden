@@ -199,10 +199,13 @@ saveRDS(data, "data/Smart Identification2.rds")
 ###### t-Test der 3 Hypothesen
 
 # H1: 
-t.test(filter(data, which_eID)$DIG_TECH)
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH,
+       filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH)
 
 # H2:
-t.test(filter(data, which_eID)$TRUE_FALSE)
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,
+       filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE)
 
 # H3:
-t.test(filter(data, residence)$Statement1)
+t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,
+       filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
