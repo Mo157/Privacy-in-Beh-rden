@@ -145,11 +145,39 @@ Drei Zusammenhangshypothesen + dazugehörige Nullhypothese
 Hypothese: Je höherer der KUT, desto höher der DIG_TECH
 H0: Es gibt keinen Zusammenhang zwischen KUT und DIG_TECH
 
+## Unverbundener T-Test. UV: KUT, AV: DIG_TECH:
+
+t.test( filter(data_robot, gender == "weiblich")$kut, 
+
+        filter(data_robot, gender == "männlich")$kut )
+
+## Ergebnis: H0 verwerfen.
+
 2: AGE und USE_TECH
 Hypothese: Je älter der Mensch, desto niedriger der USE_TECH
 H0: Es gibt keinen Zusammenhang zwischen AGE und USE_TECH
 
+## Unverbundener T-Test. UV: AGE, AV: USE_TECH:
+
+t.test( filter(data_robot, gender == "weiblich")$kut, 
+
+        filter(data_robot, gender == "männlich")$kut )
+
+## Ergebnis: H0 verwerfen.
+
 3: TRUST_TECH und TRUST_AUTHORITY
 Hypothese: Je mehr man Technologien vertraut, desto eher vertraut man Behörden
 H0: Es gibt keinen Zusammenhang zwischen TRUST_TECH und TRUST_AUTHORITY
+
+## Unverbundener T-Test. UV: TRUST_TECH, AV: TRUST_AUTHORITY:
+
+t.test( filter(data_robot, gender == "weiblich")$kut, 
+
+        filter(data_robot, gender == "männlich")$kut )
+
+## Ergebnis: H0 verwerfen.
+
 >>>>>>> 684925067597a5a3eb924b1e80481bfc611c3985
+
+
+
