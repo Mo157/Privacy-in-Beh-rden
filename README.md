@@ -128,9 +128,13 @@ t.test(filter(data, residence)$Statement1)
 
 Hinweise zum Umgang mit P-Values.
 
-Der P-Wert (in R p-value) wird auch Signifikanzniveau genannt. Das gängige Signifikanzniveau beträgt 5%. Das bedeutet, dass bei p > 5% wird die H0 behalten und bei p < 5% wird diese zugunsten der H1 verworfen. Bei uns würde das bedeuten, dass man beispielsweise bei einem Signifikanzniveau von p > 5% statt der H1 („Personen, die eine aktivierte eID haben, weisen eine höhere Technikakzeptanz auf als Personen mit nicht aktivierter eID.“) die entsprechende H0 („Es gibt keinen Unterschied in der Technikakzeptanz zwischen Personen mit aktivierter eID und Personen mit nicht aktivierter eID“) verwendet wird. Ist das Signifikanzniveau bei p < 5% wäre es genau umgekehrt. Wichtig ist, dass der P-Wert nicht direkt die Wahrscheinlichkeit für einen Alphafehler ist, sondern die Wahrscheinlichkeit für unsere Daten (oder extremere), wenn die H0 wahr ist. Dennoch hat der P-Wert eine hohe Relevanz, da er immer eine Aussage über die Daten trifft, jedoch nicht über den Wahrheitsgehalt der entworfenen Hypothesen.
-Für weitere Infos eignen sich die folgenden Quellen:
+
+Der P-Wert (in R p-value) beschreibt eine Wahrscheinlichkeit. Das gängige Signifikanzniveau beträgt p=0.05. Das bedeutet, dass bei p > 0.05 wird die H0 behalten und bei p < 0.05 wird diese zugunsten der H1 verworfen. Wichtig ist, dass der P-Wert nicht direkt die Wahrscheinlichkeit für einen Alphafehler ist, sondern die Wahrscheinlichkeit für unsere Daten (oder extremere), wenn die H0 wahr ist. Dennoch hat der P-Wert eine hohe Relevanz, da er immer eine Aussage über die Daten trifft, jedoch nicht über den Wahrheitsgehalt der entworfenen Hypothesen. Er liefert also eine erste Antwort auf die Fragen: Wie gut „passen“ unsere Daten zur Nullhypothese? vs. Wie wahrscheinlich ist die Richtigkeit der Alternativhypothese?.
+
+Für weitere Infos eignen sich folgende Quellen:
+
 http://www.perfendo.org/docs/BayesProbability/twelvePvaluemisconceptions.pdf
+
 http://blog.minitab.com/blog/adventures-in-statistics-2/not-all-p-values-are-created-equal
 <<<<<<< HEAD
 >>>>>>> 0a88476d356c5a7526fc63c530a5631eb05de6c4
