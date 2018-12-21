@@ -114,17 +114,17 @@ Einen eID-fähigen, dessen Funktion ich auch nutze.
 # R Code zur Überprüfung der 3 Hypothesen mit T-Test (Schreibe es auch in das Analyse Skript)
 
 H1:
-t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH,filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH)
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH,filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze")$DIG_TECH)
 
 
 H2: 
-t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE)
+t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze.")$TRUE_FALSE)
 
 
 H3: 
 t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
 
-t.test(filter(data, residence)$Statement1)
+
 
 Hinweise zum Umgang mit P-Values.
 
@@ -149,37 +149,34 @@ Drei Zusammenhangshypothesen + dazugehörige Nullhypothese
 Hypothese: Je höherer der KUT, desto höher der DIG_TECH
 H0: Es gibt keinen Zusammenhang zwischen KUT und DIG_TECH
 
-## Unverbundener T-Test. UV: KUT, AV: DIG_TECH:
+## Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
-t.test( filter(data_robot, gender == "weiblich")$kut, 
 
-        filter(data_robot, gender == "männlich")$kut )
+cor.test (KUT,DIG_TECH, method ="spearman")
 
-## Ergebnis: H0 verwerfen.
+## Ergebnis: (Warten auf Datenerhebung)
 
 2: AGE und USE_TECH
 Hypothese: Je älter der Mensch, desto niedriger der USE_TECH
 H0: Es gibt keinen Zusammenhang zwischen AGE und USE_TECH
 
-## Unverbundener T-Test. UV: AGE, AV: USE_TECH:
+## Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
-t.test( filter(data_robot, gender == "weiblich")$kut, 
 
-        filter(data_robot, gender == "männlich")$kut )
+cor.test (AGE,DIG_TECH, method ="spearman")
 
-## Ergebnis: H0 verwerfen.
+## Ergebnis: (Warten auf Datenerhebung)
 
 3: TRUST_TECH und TRUST_AUTHORITY
 Hypothese: Je mehr man Technologien vertraut, desto eher vertraut man Behörden
 H0: Es gibt keinen Zusammenhang zwischen TRUST_TECH und TRUST_AUTHORITY
 
-## Unverbundener T-Test. UV: TRUST_TECH, AV: TRUST_AUTHORITY:
+## Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
-t.test( filter(data_robot, gender == "weiblich")$kut, 
 
-        filter(data_robot, gender == "männlich")$kut )
+cor.test (AGE,DIG_TECH, method ="spearman")
 
-## Ergebnis: H0 verwerfen.
+## Ergebnis: (Warten auf Datenerhebung)
 
 >>>>>>> 684925067597a5a3eb924b1e80481bfc611c3985
 
