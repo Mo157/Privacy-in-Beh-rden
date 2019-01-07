@@ -222,6 +222,7 @@ saveRDS(data, "data/Smart Identification2.rds")
 
 t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH,
        filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze.")$DIG_TECH)
+## FEEDBACK: Der Code ist super! An der Formulierung stört mich aber ein bisschen, dass der Bezugspunkt der Technikakzeptanz nicht deutlich wird. Technikakzeptanz wovon?
 
 #2. Hypothese
 
@@ -230,6 +231,7 @@ t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deakt
 
 t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,
        filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze.")$TRUE_FALSE)
+## FEEDBACK: Super, funktioniet so!
 
 # 3. Hypothese
 
@@ -238,6 +240,12 @@ t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deakt
 
 t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,
        filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
+
+## FEEDBACK: Bei der Nullhypothese stimmt was nicht... 
+# Der Code ist für unser Seminar okay, für die Zukunft sei ihnen aber noch mitgegeben, dass einzelne Items eigentlich nicht mit T-Test untersucht werden. 
+# Hier wäre der sogenannte Mann-Whitney-U-Test (kurz: U-Test) die richtige Methode. Der U-Test vergleicht genau zwei Gruppen hinsichtlich einer *ordinalen* Variable.
+# Der U-Test kommt in der Vorlesung noch dran und ist in der Interpretation genau wie der T-Test. Hierfür schreiben Sie einfach oben wilcox.test() statt t.test().
+# Können Sie ja mal ausprobieren, nur Mut :-)
 
 
 
@@ -253,7 +261,7 @@ t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,
 
 
 cor.test (KUT,DIG_TECH, method ="spearman")
-
+## FEEDBACK: Super, genau so. 
 ## Ergebnis: (Warten auf Datenerhebung)
 
 #2. Hypothese: AGE und USE_TECH
@@ -264,7 +272,7 @@ cor.test (KUT,DIG_TECH, method ="spearman")
 
 
 cor.test (AGE,DIG_TECH, method ="spearman")
-
+## FEEDBACK: Funktioniert auch, das mit dem USE_TECH und DIG_TECH ist aber ein bisschen verwirrend. Das erste gibt es in ihren Daten gar nicht, oder?
 ## Ergebnis: (Warten auf Datenerhebung)
 
 #3. Hypothese: TRUST_TECH und TRUST_AUTHORITY
@@ -275,5 +283,5 @@ cor.test (AGE,DIG_TECH, method ="spearman")
 
 
 cor.test (AGE,DIG_TECH, method ="spearman")
-
+## FEEDBACK: Das ist noch der Code von H2. Ich bin aber zuversichtlich, dass sie das hinbekommen hätten :-)
 ## Ergebnis: (Warten auf Datenerhebung)
