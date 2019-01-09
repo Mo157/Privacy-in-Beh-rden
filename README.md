@@ -180,5 +180,7 @@ cor.test (AGE,DIG_TECH, method ="spearman")
 
 >>>>>>> 684925067597a5a3eb924b1e80481bfc611c3985
 
+## Datenerhebung und Stand 09.01.2019
 
+Wir haben nun unsere Befragung abgeschlossen und Feedback zu unseren Hypothesen bekommen. Das Feeback finden wir in unserem AnalyseScript.R
 
