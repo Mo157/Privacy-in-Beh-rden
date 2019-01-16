@@ -35,7 +35,7 @@ source("surveymonkey.R")
 
 #### Datei laden ----
 
-filename <- "data/SmartIdentification.csv"
+filename <- "data/SmartIdentification_all.csv"
 raw <- load_surveymonkey_csv(filename)
 
 
@@ -197,7 +197,8 @@ scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 
 
 
 data <- bind_cols(raw.short, as.tibble(scores$scores))                     
-data <- data %>% 
+data <- data %>% filter (age != 99)
+data <- data %>%
   select(-starts_with("kut", ignore.case = F)) %>% 
   select(-starts_with("privacy", ignore.case = F)) %>%
   select(-starts_with("data_protec", ignore.case = F)) %>%
