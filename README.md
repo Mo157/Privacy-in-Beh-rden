@@ -24,7 +24,7 @@ Die Ergebnisse der Literaturrecherche zum Thema "Electronic Identity Card" wurde
 
 Hier eine Zusammenstellung der wichtigsten Quellen:
 
-Hölzl, Michael; Roland, Michael; Mayrhofer, Rene: Real-world Identification for an Extensible and Privacy-preservingMobile eID. Privacy and Identity Management. The Smwart World Revolution - International Summer School, 2017.
+Hölzl, Michael; Roland, Michael; Mayrhofer, Rene: Real-world Identification for an Extensible and Privacy-preserving Mobile eID. Privacy and Identity Management. The Smwart World Revolution - International Summer School, 2017.
 
 Juels, Ari; Molnar, David; Wagner, David A.:Security and Privacy Issues in E-passports - First International Conference on Security and Privacy for Emerging Areas in Communications Networks, 2005.
 
