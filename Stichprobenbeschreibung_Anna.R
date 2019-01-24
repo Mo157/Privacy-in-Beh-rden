@@ -108,6 +108,7 @@ ggsave("KUT.png", width = 9, height = 4)
 
 
 
+
 ## KUT Boxplott Männer und Frauen (erstmal nihct relevant)
 
 library(ggplot2)
