@@ -22,7 +22,17 @@ Welche Nutzerfaktoren beeinflussen die Nutzungsbereitschaft einer electronic Ide
 
 Die Ergebnisse der Literaturrecherche zum Thema "Electronic Identity Card" wurden in einer Excel-Liste gesammelt.
 
-Hier eine Zusammenstellung der wichtigsten drei Quellen:
+Hier eine Zusammenstellung der wichtigsten Quellen:
+
+Hölzl, Michael; Roland, Michael; Mayrhofer, Rene: Real-world Identification for an Extensible and Privacy-preservingMobile eID. Privacy and Identity Management. The Smwart World Revolution - International Summer School, 2017.
+
+Juels, Ari; Molnar, David; Wagner, David A.:Security and Privacy Issues in E-passports - First International Conference on Security and Privacy for Emerging Areas in Communications Networks, 2005.
+
+Xiao, Qinghan; Savastano, Mario: An exploration on security and privacy issues of biometric smart ID cards - IEEE SMC Information Assurance and Security Workshop, 2007.
+
+Yeow, Paul H.; Loo, W.H., Chong: Malaysian's acceptance towards the multipurpose smart national identity card and driving license - Multimedia University, 2006.
+
+
 
 
 # Faktorenraum 1.0
