@@ -19,15 +19,39 @@ print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
 
 #### Bibliotheken laden
 
+#install.packages("tidyverse")
+#install.packages("lubridate")
+#install.packages("psych")
+#install.packages("esquisse")
+#install.packages("ggthemes")
+#install.packages("ggplot2")
+#install.packages("devtools")
+#install.packages("jmv")
+#install.packages("scales")
+
+
+
 install.packages("tidyverse")
 install.packages("lubridate")
 install.packages("psych")
 install.packages("esquisse")
 install.packages("ggthemes")
 install.packages("ggplot2")
-
 install.packages("devtools")
+install.packages("jmv")
+install.packages("scales")
+
+
+library(tidyverse)
+library(lubridate)
+library(psych)
+library(esquisse)
+library(ggthemes)
+library(ggplot2)
 library(devtools)
+library(jmv)
+library(scales)
+
 devtools::install_github("HCIC/r-tools")
 
 source("surveymonkey.R")
@@ -35,7 +59,7 @@ source("surveymonkey.R")
 
 #### Datei laden ----
 
-filename <- "data/smart_identification.csv"
+filename <- "data/SmartIdentification.csv"
 raw <- load_surveymonkey_csv(filename)
 
 
@@ -55,6 +79,12 @@ codebook <- read_codebook("codebook_final.csv")
 
 #neue Namen auf die Daten anwenden:
 names(raw.short) <- codebook$variable
+
+View(raw.short)
+
+#Dummys entfernen
+
+raw.short[ ! ( ( raw.short$age != 99) ) , ]
 
 View(raw.short)
 
@@ -180,7 +210,7 @@ raw.short$statement6 <- ordered(raw.short$statement6, levels = scale.zustimmung)
 
 library(psych)
 
-schluesselliste <- list(KUT= c("kut1", "-kut2", "kut3", "kut4", "kut5", "kut6", "kut7", "kut8"),
+schluesselliste <- list(KUT= c("kut1", "-kut2", "kut3", "kut4", "-kut5", "kut6", "kut7", "-kut8"),
                         PRIVACY= c("privacy1", "privacy2", "-privacy3"),
                         DATA_PROTEC= c("data_protec1", "data_protec2", "-data_protec3"),
                         BUY_TECH= c("buy_tech1", "buy_tech2", "buy_tech3", "buy_tech4", "buy_tech5", "buy_tech6"),
@@ -189,14 +219,26 @@ schluesselliste <- list(KUT= c("kut1", "-kut2", "kut3", "kut4", "kut5", "kut6", 
                         TRUE_FALSE= c("true_false1", "true_false2", "-true_false3", "-true_false4", "true_false5", "-true_false6"),
                         TRUST_AUTHORITY= c("trust_authority1", "trust_authority2", "-trust_authority3", "-trust_authority4", "-trust_authority7"),
                         ATTITUDE_EID = c("trust_authority5", "-trust_authority6", "Statement1","statement2"),
-                        SELF_ASSESMENT = c("statement3", "-statement4", "statement5", "-statement6")
+                        SELF_ASSESMENT = c("statement3", "-statement4", "statement5", "-statement6"),
+                        DATA_PRIVACY = c("privacy1", "privacy2", "-privacy3","data_protec1", "data_protec2", "-data_protec3"),
+                        TRUE_S = c("true_false1", "true_false2","true_false5"),
+                        FALSE_S= c("true_false3", "true_false4","true_false6"),
+                        ORIGINAL_AU =c("trust_authority1", "trust_authority2", "-trust_authority3", "-trust_authority4","trust_authority5", "-trust_authority6", "-trust_authority7"),
+                        ORIGINAL_EID = c("Statement1","statement2","statement3", "-statement4", "statement5", "-statement6")
 )
 
 
 scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
 
 
-data <- bind_cols(raw.short, as.tibble(scores$scores))                     
+# Skalen prüfen
+scores$alpha
+
+
+
+
+data <- bind_cols(raw.short, as.tibble(scores$scores))  
+data <- data %>% filter (age != 99)
 data <- data %>% 
   select(-starts_with("kut", ignore.case = F)) %>% 
   select(-starts_with("privacy", ignore.case = F)) %>%
@@ -204,13 +246,20 @@ data <- data %>%
   select(-starts_with("buy_tech", ignore.case = F)) %>%
   select(-starts_with("trust_tech", ignore.case = F)) %>%
   select(-starts_with("dig_tech", ignore.case = F)) %>%
-  select(-starts_with("true_false", ignore.case = F)) %>%
+ # select(-starts_with("true_false", ignore.case = F)) %>%
   select(-starts_with("trust_authority", ignore.case = F)) %>% 
   select(-starts_with("statement", ignore.case = F))
 
 View(data)
 
-saveRDS(data, "data/Smart Identification2.rds")
+table(data$true_false1)
+table(data$true_false2)
+table(data$true_false3)
+table(data$true_false4)
+table(data$true_false5)
+table(data$true_false6)
+
+#saveRDS(data, "data/Smart Identification2.rds")
 
 
 ###### t-Test der 3 Unterschieds-Hypothesen
@@ -224,9 +273,6 @@ t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deakt
        filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze.")$DIG_TECH)
 ## FEEDBACK: Der Code ist super! An der Formulierung stört mich aber ein bisschen, dass der Bezugspunkt der Technikakzeptanz nicht deutlich wird. Technikakzeptanz wovon?
 
-wilcox.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH,
-            filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze.")$DIG_TECH)
-
 #2. Hypothese
 
 # H2:Besitzer einer aktivierten eID haben ein höheres Wissen über die eID, als Besitzer einer nicht aktivierten eID.
@@ -234,14 +280,12 @@ wilcox.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber 
 
 t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,
        filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze.")$TRUE_FALSE)
-
-t.test
 ## FEEDBACK: Super, funktioniet so!
 
 # 3. Hypothese
 
 #H3: Personen, die auf dem Land leben, beabsichtigen stärker die eID in nächster Zeit zu nutzen, als Personen, die zentral in einer Stadt wohnen.
-#H0: Es gibt keinen Unterschied in der Absicht in nächster Zeit eine eID zu nutzen zwischen Personen mit aktivierter und Personen mit nicht aktivierter eID.
+#H0: Es gibt keinen Unterschied in der Absicht in nächster Zeit eine eID zu nutzen zwischen Personen die in der Stadt und Personen, die auf dem Land wohnen.
 
 t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,
        filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
@@ -265,18 +309,18 @@ t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,
 ## Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
 
-cor.test (KUT,DIG_TECH, method ="spearman")
+cor.test (data$KUT,data$DIG_TECH, method ="spearman", ci=TRUE)
 ## FEEDBACK: Super, genau so. 
 ## Ergebnis: (Warten auf Datenerhebung)
 
-#2. Hypothese: AGE und USE_TECH
-#H2: Je älter der Mensch, desto niedriger der USE_TECH
-#H0: Es gibt keinen Zusammenhang zwischen AGE und USE_TECH
+#2. Hypothese: AGE und DIG_TECH
+#H2: Je älter der Mensch, desto niedriger der DIG_TECH
+#H0: Es gibt keinen Zusammenhang zwischen AGE und DIG_TECH
 
 ## Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
 
-cor.test (AGE,DIG_TECH, method ="spearman")
+cor.test (data$AGE,data$DIG_TECH, method ="spearman", ci =TRUE)
 ## FEEDBACK: Funktioniert auch, das mit dem USE_TECH und DIG_TECH ist aber ein bisschen verwirrend. Das erste gibt es in ihren Daten gar nicht, oder?
 ## Ergebnis: (Warten auf Datenerhebung)
 
@@ -287,6 +331,38 @@ cor.test (AGE,DIG_TECH, method ="spearman")
 ## Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
 
-cor.test (AGE,DIG_TECH, method ="spearman")
+cor.test (data$TRUST_TECH,data$TRUST_AUTHORITY, method ="spearman", ci=TRUE)
 ## FEEDBACK: Das ist noch der Code von H2. Ich bin aber zuversichtlich, dass sie das hinbekommen hätten :-)
 ## Ergebnis: (Warten auf Datenerhebung)
+
+
+describe(data$which_eID)
+
+anova(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,
+      filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze.")$TRUE_FALSE,
+      filter(data, which_eID== "Ich weiß es nicht.")$TRUE_FALSE,
+      filter(data, which_eID== "Einen alten, der nicht eID-fähig ist.")$TRUE_FALSE)
+
+jmv::corrMatrix(data, var = vars(KUT, DIG_TECH), ci =TRUE)
+
+
+data %>% 
+  group_by(which_eID) %>% 
+  summarise(mean_kut = mean(KUT)) %>% 
+  ggplot() +
+  aes(x = which_eID, y = mean_kut, colour = which_eID, weight = mean_kut)
+
+
+data %>% 
+  ggplot()+
+  aes(x = which_eID, y = KUT, colour = which_eID, weight = KUT)
+  
+library(ggplot2)
+
+ggplot(data = data) +
+  aes(x = which_eID, y = KUT) +
+  geom_boxplot(fill = "#0c4c8a") +
+  theme_minimal()
+
+
+  

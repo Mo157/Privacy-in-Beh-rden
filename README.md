@@ -91,21 +91,6 @@ Personen, die nicht zentral in einer Stadt leben, sind eher dazu bereit, die eID
 H0: Es gibt keinen Unterschied in der Absicht in nächster Zeit eine eID zu nutzen zwischen Personen mit aktivierter und Personen mit nicht aktivierter eID.
 
 
-# Forschungsstand 07.12.18 - Ausführung des t-Test
-
-
-H1:
-t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH,filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze")$DIG_TECH)
-
-
-H2: 
-t.test(filter(data, which_eID== "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUE_FALSE,filter(data, which_eID== "Einen eID-fähigen, dessen Funktion ich auch nutze.")$TRUE_FALSE)
-
-
-H3: 
-t.test(filter(data, residence== "Ich wohne auf dem Land.")$Statement1,filter(data, residence== "Ich wohne zentral in einer Stadt.")$Statement1)
-
-
 
 # Hinweise zum Umgang mit P-Values.
 
@@ -132,7 +117,7 @@ H0: Es gibt keinen Zusammenhang zwischen KUT und DIG_TECH
 --> Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
 
-cor.test (KUT,DIG_TECH, method ="spearman")
+
 
 
 2. Zusammenhangshypothese - AGE und USE_TECH
@@ -143,7 +128,6 @@ H0: Es gibt keinen Zusammenhang zwischen AGE und USE_TECH
 --> Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
 
-cor.test (AGE,DIG_TECH, method ="spearman")
 
 
 3. Zusammenhangshypothese - TRUST_TECH und TRUST_AUTHORITY
@@ -154,12 +138,106 @@ H0: Es gibt keinen Zusammenhang zwischen TRUST_TECH und TRUST_AUTHORITY
 --> Berechnung des Korrelationskoeffizienten nach Spearman (da Vorraussetzung für Pearson Korrelation noch nicht prüfbar sind):
 
 
-cor.test (TRUST_TECH,TRUST_AUTHORITY, method ="spearman")
 
 
 # Forschungsstand 09.01.2019 - Datenerhebung
 
 Wir haben am 07.01.2019 unsere Befragung erfolgreich abgeschlossen. 
 
-# Ergebnisse 
+
+# Aufstellen weiterer Hypothesen
+
+Beim Aufstellen der ersten Hypothesen im Seminar während des Semesters hatten wir teilweise aus den Augen verloren, dass sich die Hypothesen auf die Forschungsfrage beziehen sollten (Beispiel: Zusammenhang KUT und DIG_TECH).
+
+Andere Hypothesen ließen sich nicht sinnvoll testen, da die gewählte Skala beim Analysieren der Ergebnisse keinen akzeptablen Cronbachs Alpha-Wert aufwies (<0.5).
+
+Wir haben die oben genannten Hypothesen getestet, jedoch auch weitere Überlegungen zu unseren Daten angestellt und diese an hand der vorliegenden Daten untersucht.
+
+Wir haben uns dazu entschlossen, für das Seminar das Ergebnis der folgenden Hypothesen zu berichten:
+
+1) Zusammenhang zwischen der Einstellung zur eID und verschiedenen Nutzerfaktoren.
+
+-	H1.1.: Es gibt einen Zusammenhang zwischen der Einstellung zur eID und der Digitalisierungsaffinität.
+
+-	H1.2: Es gibt einen Zusammenhang zwischen der Einstellung zur eID und dem Vertrauen in Behörden.
+
+2) Unterschiede zwischen den Nutzergruppen mit aktivierter eID und deaktivierter eID
+
+-	H2.1: Die Gruppe der Nutzer mit aktivierter eID und die Gruppe der Nutzer mit deaktivierter eID unterscheiden sich im Mittel in ihrer Digitalisierungsaffinität.
+
+-	H2.2: Die Gruppe der Nutzer mit aktivierter eID und die Gruppe der Nutzer mit deaktivierter eID unterscheiden sich im Mittel in ihrem Vertrauen in Behörden.
+
+
+
+# Ergebnisse für die Seminarpräsentation
+
+1) Zusammenhang zwischen der Einstellung zur eID und verschiedenen Nutzerfaktoren.
+
+ Correlation Matrix                                                                                                                   
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+                                     age      KUT       DIG_TECH    TRUST_TECH    TRUST_AUTHORITY    ATTITUDE_EID    SELF_ASSESMENT   
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+   age                Pearson's r        —    -0.086      -0.140        -0.076              0.025           0.060             0.074   
+                      p-value            —     0.156       0.020         0.206              0.680           0.324             0.221   
+                                                                                                                                      
+   KUT                Pearson's r                  —       0.466         0.273              0.115           0.155             0.149   
+                      p-value                      —      < .001        < .001              0.058           0.010             0.013   
+                                                                                                                                      
+   DIG_TECH           Pearson's r                              —         0.444              0.289           0.369             0.181   
+                      p-value                                  —        < .001             < .001          < .001             0.003   
+                                                                                                                                      
+   TRUST_TECH         Pearson's r                                            —              0.502           0.340             0.212   
+                      p-value                                                —             < .001          < .001            < .001   
+                                                                                                                                      
+   TRUST_AUTHORITY    Pearson's r                                                               —           0.404             0.287   
+                      p-value                                                                   —          < .001            < .001   
+                                                                                                                                      
+   ATTITUDE_EID       Pearson's r                                                                               —             0.281   
+                      p-value                                                                                   —            < .001   
+                                                                                                                                      
+   SELF_ASSESMENT     Pearson's r                                                                                                 —   
+                      p-value                                                                                                     —   
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+
+-	H1.1.: Es gibt einen Zusammenhang zwischen der Einstellung zur eID und der Digitalisierungsaffinität.
+--> Die Nullhypothese wird zu gunsten der Alternativhypothese verworfen.
+
+-	H1.2: Es gibt einen Zusammenhang zwischen der Einstellung zur eID und dem Vertrauen in Behörden.
+--> Die Nullhypothese wird zu gunsten der Alternativhypothese verworfen.
+
+
+2) Unterschiede zwischen den Nutzergruppen mit aktivierter eID und deaktivierter eID
+
+H2.1: Die Gruppe der Nutzer mit aktivierter eID und die Gruppe der Nutzer mit deaktivierter eID unterscheiden sich im Mittel in ihrer Digitalisierungsaffinität.
+
+	Welch Two Sample t-test
+
+data:  filter(data, which_eID == "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$DIG_TECH and filter(data, which_eID == "Einen eID-fähigen, dessen Funktion ich auch nutze.")$DIG_TECH
+t = -0.29243, df = 22.298, p-value = 0.7727
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4727698  0.3558394
+sample estimates:
+mean of x mean of y 
+ 4.010285  4.068750 
+ 
+ --> Die Nullhypothese wird beibehalten.
+ 
+
+H2.2: Die Gruppe der Nutzer mit aktivierter eID und die Gruppe der Nutzer mit deaktivierter eID unterscheiden sich im Mittel in ihrem Vertrauen in Behörden.
+
+
+
+	Welch Two Sample t-test
+
+data:  filter(data, which_eID == "Einen eID-fähigen, die Funktion ist aber deaktiviert.")$TRUST_AUTHORITY and filter(data, which_eID == "Einen eID-fähigen, dessen Funktion ich auch nutze.")$TRUST_AUTHORITY
+t = -3.5536, df = 28.679, p-value = 0.001338
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.8132407 -0.2189112
+sample estimates:
+mean of x mean of y 
+ 3.613924  4.130000 
+ 
+--> Die Nullhypothese wird zu gunsten der Alternativhypothese verworfen.
 
